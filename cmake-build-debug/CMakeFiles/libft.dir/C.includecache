@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/tamarant/Desktop/lv1/Libft/libft/libft.h
+stdlib.h
+-
+
+/Users/tamarant/Desktop/lv1/Libft/tests/header.h
+stdio.h
+-
+../libft/libft.h
+/Users/tamarant/Desktop/lv1/Libft/libft/libft.h
+
+/Users/tamarant/Desktop/lv1/Libft/tests/main.c
+header.h
+/Users/tamarant/Desktop/lv1/Libft/tests/header.h
+
