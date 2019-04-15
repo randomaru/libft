@@ -83,6 +83,9 @@
 		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_atoi.c">
 			<Option target="libft"/>
 		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_bzero.c">
+			<Option target="libft"/>
+		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_isalnum.c">
 			<Option target="libft"/>
 		</Unit>
@@ -98,7 +101,40 @@
 		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_isprint.c">
 			<Option target="libft"/>
 		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_itoa.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_memalloc.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_memccpy.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_memchr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_memcmp.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_memcpy.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_memdel.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_memmove.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_memset.c">
+			<Option target="libft"/>
+		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_putchar.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_putendl.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_putnbr.c">
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_putstr.c">
@@ -116,16 +152,43 @@
 		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_strdup.c">
 			<Option target="libft"/>
 		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_strequ.c">
+			<Option target="libft"/>
+		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_striter.c">
 			<Option target="libft"/>
 		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_striteri.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_strjoin.c">
+			<Option target="libft"/>
+		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_strlen.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_strmap.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_strmapi.c">
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_strncmp.c">
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_strncpy.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_strnequ.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_strnew.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_strsub.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_strtrim.c">
 			<Option target="libft"/>
 		</Unit>
 		<Unit filename="/Users/tamarant/Desktop/lv1/Libft/ft_tolower.c">

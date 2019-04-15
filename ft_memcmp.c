@@ -1,37 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/14 22:25:09 by tamarant          #+#    #+#             */
-/*   Updated: 2019/04/15 15:26:32 by tamarant         ###   ########.fr       */
+/*   Created: 2019/04/15 20:36:07 by tamarant          #+#    #+#             */
+/*   Updated: 2019/04/15 21:08:39 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	if (n > -2147483648 && n <= 2147483647)
+	unsigned char	*str1;
+	unsigned char	*str2;
+	size_t			i;
+
+	str1 = (unsigned char*)s1;
+	str2 = (unsigned char*)s2;
+	i = 0;
+	if (str1 == str2 || n == 0)
+		return (0);
+	while (n--)
 	{
-		if (n < 0)
-		{
-			ft_putchar('-');
-			ft_putnbr(n * -1);
-		}
-		else if (n > 9)
-		{
-			ft_putnbr(n / 10);
-			ft_putnbr(n % 10);
-		}
-		else
-			ft_putchar(n + 48);
+		if (str1[i] != str2[i])
+			return (str1[i] - str2[i]);
+		i++;
 	}
-	if (n == -2147483648)
-	{
-		ft_putstr("-2147483648");
-		return ;
-	}
+	return (0);
 }
