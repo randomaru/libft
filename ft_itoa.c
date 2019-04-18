@@ -6,44 +6,58 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/12 20:37:24 by tamarant          #+#    #+#             */
-/*   Updated: 2019/04/12 21:05:37 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/04/18 14:44:47 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char*	ft_itoa(int n)
+static int		ft_len_itoa(int n)
 {
-	int		len;
-	int		neg;
-	int		buf;
-	char	*res;
+	int len;
 
-	len = 0;
-	neg = 0;
-	if (n < 0)
+	len = 1;
+	while (n > 9)
 	{
-		neg = 1;
-		n = -1 * n;
-	}
-	buf = n;
-	while (buf > 0)
-	{
-		buf = buf /10;
+		n = n / 10;
 		len++;
 	}
-	len += neg;
-	res = (char*)malloc(sizeof(char) * (len + 1));
-	if (res == NULL)
-		return (NULL);
-	len--;
-	res[len] = '\0';
-	while (n > 0)
+	return (len);
+}
+
+static char		ft_str_int(char *s, int n, int len, int neg)
+{
+	while (len--)
 	{
-		res[len--] = ((n % 10) + '0');
+		s[len] = (n % 10) + 48;
 		n = n / 10;
 	}
 	if (neg)
-		res[0] = '-';
-	return (res);
+		s[0] = '-';
+	return ((char)s);
+}
+
+char			*ft_itoa(int n)
+{
+	int		len;
+	int		neg;
+	char	*res;
+
+	neg = 0;
+	if (n > -2147483648 && n <= 2147483647)
+	{
+		if (n < 0)
+		{
+			neg = 1;
+			n *= -1;
+		}
+		len = ft_len_itoa(n) + neg;
+		if (!(res = ft_strnew(len)))
+			return (NULL);
+		ft_str_int(res, n, len, neg);
+		return (res);
+	}
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	return (NULL);
 }

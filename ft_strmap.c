@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/11 16:29:04 by tamarant          #+#    #+#             */
-/*   Updated: 2019/04/12 15:22:22 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/04/16 14:01:34 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,11 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char	*fs;
 
 	i = 0;
-	fs = (char*)malloc(sizeof(*fs) * (ft_strlen((char*)s) + 1));
-	if (s && fs)
+	if (s && f)
 	{
+		fs = (char*)malloc(sizeof(*fs) * (ft_strlen((char*)s) + 1));
+		if (!fs)
+			return (NULL);
 		while (s[i] != '\0')
 		{
 			fs[i] = f(s[i]);

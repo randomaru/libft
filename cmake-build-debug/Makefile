@@ -582,6 +582,33 @@ ft_putchar.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putchar.c.s
 .PHONY : ft_putchar.c.s
 
+ft_putchar_fd.o: ft_putchar_fd.c.o
+
+.PHONY : ft_putchar_fd.o
+
+# target to build an object file
+ft_putchar_fd.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putchar_fd.c.o
+.PHONY : ft_putchar_fd.c.o
+
+ft_putchar_fd.i: ft_putchar_fd.c.i
+
+.PHONY : ft_putchar_fd.i
+
+# target to preprocess a source file
+ft_putchar_fd.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putchar_fd.c.i
+.PHONY : ft_putchar_fd.c.i
+
+ft_putchar_fd.s: ft_putchar_fd.c.s
+
+.PHONY : ft_putchar_fd.s
+
+# target to generate assembly for a file
+ft_putchar_fd.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putchar_fd.c.s
+.PHONY : ft_putchar_fd.c.s
+
 ft_putendl.o: ft_putendl.c.o
 
 .PHONY : ft_putendl.o
@@ -608,6 +635,33 @@ ft_putendl.s: ft_putendl.c.s
 ft_putendl.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putendl.c.s
 .PHONY : ft_putendl.c.s
+
+ft_putendl_fd.o: ft_putendl_fd.c.o
+
+.PHONY : ft_putendl_fd.o
+
+# target to build an object file
+ft_putendl_fd.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putendl_fd.c.o
+.PHONY : ft_putendl_fd.c.o
+
+ft_putendl_fd.i: ft_putendl_fd.c.i
+
+.PHONY : ft_putendl_fd.i
+
+# target to preprocess a source file
+ft_putendl_fd.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putendl_fd.c.i
+.PHONY : ft_putendl_fd.c.i
+
+ft_putendl_fd.s: ft_putendl_fd.c.s
+
+.PHONY : ft_putendl_fd.s
+
+# target to generate assembly for a file
+ft_putendl_fd.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putendl_fd.c.s
+.PHONY : ft_putendl_fd.c.s
 
 ft_putnbr.o: ft_putnbr.c.o
 
@@ -636,6 +690,33 @@ ft_putnbr.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putnbr.c.s
 .PHONY : ft_putnbr.c.s
 
+ft_putnbr_fd.o: ft_putnbr_fd.c.o
+
+.PHONY : ft_putnbr_fd.o
+
+# target to build an object file
+ft_putnbr_fd.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putnbr_fd.c.o
+.PHONY : ft_putnbr_fd.c.o
+
+ft_putnbr_fd.i: ft_putnbr_fd.c.i
+
+.PHONY : ft_putnbr_fd.i
+
+# target to preprocess a source file
+ft_putnbr_fd.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putnbr_fd.c.i
+.PHONY : ft_putnbr_fd.c.i
+
+ft_putnbr_fd.s: ft_putnbr_fd.c.s
+
+.PHONY : ft_putnbr_fd.s
+
+# target to generate assembly for a file
+ft_putnbr_fd.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putnbr_fd.c.s
+.PHONY : ft_putnbr_fd.c.s
+
 ft_putstr.o: ft_putstr.c.o
 
 .PHONY : ft_putstr.o
@@ -662,6 +743,87 @@ ft_putstr.s: ft_putstr.c.s
 ft_putstr.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putstr.c.s
 .PHONY : ft_putstr.c.s
+
+ft_putstr_fd.o: ft_putstr_fd.c.o
+
+.PHONY : ft_putstr_fd.o
+
+# target to build an object file
+ft_putstr_fd.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putstr_fd.c.o
+.PHONY : ft_putstr_fd.c.o
+
+ft_putstr_fd.i: ft_putstr_fd.c.i
+
+.PHONY : ft_putstr_fd.i
+
+# target to preprocess a source file
+ft_putstr_fd.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putstr_fd.c.i
+.PHONY : ft_putstr_fd.c.i
+
+ft_putstr_fd.s: ft_putstr_fd.c.s
+
+.PHONY : ft_putstr_fd.s
+
+# target to generate assembly for a file
+ft_putstr_fd.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_putstr_fd.c.s
+.PHONY : ft_putstr_fd.c.s
+
+ft_strcat.o: ft_strcat.c.o
+
+.PHONY : ft_strcat.o
+
+# target to build an object file
+ft_strcat.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strcat.c.o
+.PHONY : ft_strcat.c.o
+
+ft_strcat.i: ft_strcat.c.i
+
+.PHONY : ft_strcat.i
+
+# target to preprocess a source file
+ft_strcat.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strcat.c.i
+.PHONY : ft_strcat.c.i
+
+ft_strcat.s: ft_strcat.c.s
+
+.PHONY : ft_strcat.s
+
+# target to generate assembly for a file
+ft_strcat.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strcat.c.s
+.PHONY : ft_strcat.c.s
+
+ft_strchr.o: ft_strchr.c.o
+
+.PHONY : ft_strchr.o
+
+# target to build an object file
+ft_strchr.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strchr.c.o
+.PHONY : ft_strchr.c.o
+
+ft_strchr.i: ft_strchr.c.i
+
+.PHONY : ft_strchr.i
+
+# target to preprocess a source file
+ft_strchr.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strchr.c.i
+.PHONY : ft_strchr.c.i
+
+ft_strchr.s: ft_strchr.c.s
+
+.PHONY : ft_strchr.s
+
+# target to generate assembly for a file
+ft_strchr.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strchr.c.s
+.PHONY : ft_strchr.c.s
 
 ft_strclr.o: ft_strclr.c.o
 
@@ -743,6 +905,33 @@ ft_strcpy.s: ft_strcpy.c.s
 ft_strcpy.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strcpy.c.s
 .PHONY : ft_strcpy.c.s
+
+ft_strdel.o: ft_strdel.c.o
+
+.PHONY : ft_strdel.o
+
+# target to build an object file
+ft_strdel.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strdel.c.o
+.PHONY : ft_strdel.c.o
+
+ft_strdel.i: ft_strdel.c.i
+
+.PHONY : ft_strdel.i
+
+# target to preprocess a source file
+ft_strdel.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strdel.c.i
+.PHONY : ft_strdel.c.i
+
+ft_strdel.s: ft_strdel.c.s
+
+.PHONY : ft_strdel.s
+
+# target to generate assembly for a file
+ft_strdel.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strdel.c.s
+.PHONY : ft_strdel.c.s
 
 ft_strdup.o: ft_strdup.c.o
 
@@ -879,6 +1068,33 @@ ft_strjoin.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strjoin.c.s
 .PHONY : ft_strjoin.c.s
 
+ft_strlcat.o: ft_strlcat.c.o
+
+.PHONY : ft_strlcat.o
+
+# target to build an object file
+ft_strlcat.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strlcat.c.o
+.PHONY : ft_strlcat.c.o
+
+ft_strlcat.i: ft_strlcat.c.i
+
+.PHONY : ft_strlcat.i
+
+# target to preprocess a source file
+ft_strlcat.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strlcat.c.i
+.PHONY : ft_strlcat.c.i
+
+ft_strlcat.s: ft_strlcat.c.s
+
+.PHONY : ft_strlcat.s
+
+# target to generate assembly for a file
+ft_strlcat.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strlcat.c.s
+.PHONY : ft_strlcat.c.s
+
 ft_strlen.o: ft_strlen.c.o
 
 .PHONY : ft_strlen.o
@@ -959,6 +1175,33 @@ ft_strmapi.s: ft_strmapi.c.s
 ft_strmapi.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strmapi.c.s
 .PHONY : ft_strmapi.c.s
+
+ft_strncat.o: ft_strncat.c.o
+
+.PHONY : ft_strncat.o
+
+# target to build an object file
+ft_strncat.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strncat.c.o
+.PHONY : ft_strncat.c.o
+
+ft_strncat.i: ft_strncat.c.i
+
+.PHONY : ft_strncat.i
+
+# target to preprocess a source file
+ft_strncat.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strncat.c.i
+.PHONY : ft_strncat.c.i
+
+ft_strncat.s: ft_strncat.c.s
+
+.PHONY : ft_strncat.s
+
+# target to generate assembly for a file
+ft_strncat.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strncat.c.s
+.PHONY : ft_strncat.c.s
 
 ft_strncmp.o: ft_strncmp.c.o
 
@@ -1067,6 +1310,114 @@ ft_strnew.s: ft_strnew.c.s
 ft_strnew.c.s:
 	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strnew.c.s
 .PHONY : ft_strnew.c.s
+
+ft_strnstr.o: ft_strnstr.c.o
+
+.PHONY : ft_strnstr.o
+
+# target to build an object file
+ft_strnstr.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strnstr.c.o
+.PHONY : ft_strnstr.c.o
+
+ft_strnstr.i: ft_strnstr.c.i
+
+.PHONY : ft_strnstr.i
+
+# target to preprocess a source file
+ft_strnstr.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strnstr.c.i
+.PHONY : ft_strnstr.c.i
+
+ft_strnstr.s: ft_strnstr.c.s
+
+.PHONY : ft_strnstr.s
+
+# target to generate assembly for a file
+ft_strnstr.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strnstr.c.s
+.PHONY : ft_strnstr.c.s
+
+ft_strrchr.o: ft_strrchr.c.o
+
+.PHONY : ft_strrchr.o
+
+# target to build an object file
+ft_strrchr.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strrchr.c.o
+.PHONY : ft_strrchr.c.o
+
+ft_strrchr.i: ft_strrchr.c.i
+
+.PHONY : ft_strrchr.i
+
+# target to preprocess a source file
+ft_strrchr.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strrchr.c.i
+.PHONY : ft_strrchr.c.i
+
+ft_strrchr.s: ft_strrchr.c.s
+
+.PHONY : ft_strrchr.s
+
+# target to generate assembly for a file
+ft_strrchr.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strrchr.c.s
+.PHONY : ft_strrchr.c.s
+
+ft_strsplit.o: ft_strsplit.c.o
+
+.PHONY : ft_strsplit.o
+
+# target to build an object file
+ft_strsplit.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strsplit.c.o
+.PHONY : ft_strsplit.c.o
+
+ft_strsplit.i: ft_strsplit.c.i
+
+.PHONY : ft_strsplit.i
+
+# target to preprocess a source file
+ft_strsplit.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strsplit.c.i
+.PHONY : ft_strsplit.c.i
+
+ft_strsplit.s: ft_strsplit.c.s
+
+.PHONY : ft_strsplit.s
+
+# target to generate assembly for a file
+ft_strsplit.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strsplit.c.s
+.PHONY : ft_strsplit.c.s
+
+ft_strstr.o: ft_strstr.c.o
+
+.PHONY : ft_strstr.o
+
+# target to build an object file
+ft_strstr.c.o:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strstr.c.o
+.PHONY : ft_strstr.c.o
+
+ft_strstr.i: ft_strstr.c.i
+
+.PHONY : ft_strstr.i
+
+# target to preprocess a source file
+ft_strstr.c.i:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strstr.c.i
+.PHONY : ft_strstr.c.i
+
+ft_strstr.s: ft_strstr.c.s
+
+.PHONY : ft_strstr.s
+
+# target to generate assembly for a file
+ft_strstr.c.s:
+	$(MAKE) -f CMakeFiles/libft.dir/build.make CMakeFiles/libft.dir/ft_strstr.c.s
+.PHONY : ft_strstr.c.s
 
 ft_strsub.o: ft_strsub.c.o
 
@@ -1236,15 +1587,33 @@ help:
 	@echo "... ft_putchar.o"
 	@echo "... ft_putchar.i"
 	@echo "... ft_putchar.s"
+	@echo "... ft_putchar_fd.o"
+	@echo "... ft_putchar_fd.i"
+	@echo "... ft_putchar_fd.s"
 	@echo "... ft_putendl.o"
 	@echo "... ft_putendl.i"
 	@echo "... ft_putendl.s"
+	@echo "... ft_putendl_fd.o"
+	@echo "... ft_putendl_fd.i"
+	@echo "... ft_putendl_fd.s"
 	@echo "... ft_putnbr.o"
 	@echo "... ft_putnbr.i"
 	@echo "... ft_putnbr.s"
+	@echo "... ft_putnbr_fd.o"
+	@echo "... ft_putnbr_fd.i"
+	@echo "... ft_putnbr_fd.s"
 	@echo "... ft_putstr.o"
 	@echo "... ft_putstr.i"
 	@echo "... ft_putstr.s"
+	@echo "... ft_putstr_fd.o"
+	@echo "... ft_putstr_fd.i"
+	@echo "... ft_putstr_fd.s"
+	@echo "... ft_strcat.o"
+	@echo "... ft_strcat.i"
+	@echo "... ft_strcat.s"
+	@echo "... ft_strchr.o"
+	@echo "... ft_strchr.i"
+	@echo "... ft_strchr.s"
 	@echo "... ft_strclr.o"
 	@echo "... ft_strclr.i"
 	@echo "... ft_strclr.s"
@@ -1254,6 +1623,9 @@ help:
 	@echo "... ft_strcpy.o"
 	@echo "... ft_strcpy.i"
 	@echo "... ft_strcpy.s"
+	@echo "... ft_strdel.o"
+	@echo "... ft_strdel.i"
+	@echo "... ft_strdel.s"
 	@echo "... ft_strdup.o"
 	@echo "... ft_strdup.i"
 	@echo "... ft_strdup.s"
@@ -1269,6 +1641,9 @@ help:
 	@echo "... ft_strjoin.o"
 	@echo "... ft_strjoin.i"
 	@echo "... ft_strjoin.s"
+	@echo "... ft_strlcat.o"
+	@echo "... ft_strlcat.i"
+	@echo "... ft_strlcat.s"
 	@echo "... ft_strlen.o"
 	@echo "... ft_strlen.i"
 	@echo "... ft_strlen.s"
@@ -1278,6 +1653,9 @@ help:
 	@echo "... ft_strmapi.o"
 	@echo "... ft_strmapi.i"
 	@echo "... ft_strmapi.s"
+	@echo "... ft_strncat.o"
+	@echo "... ft_strncat.i"
+	@echo "... ft_strncat.s"
 	@echo "... ft_strncmp.o"
 	@echo "... ft_strncmp.i"
 	@echo "... ft_strncmp.s"
@@ -1290,6 +1668,18 @@ help:
 	@echo "... ft_strnew.o"
 	@echo "... ft_strnew.i"
 	@echo "... ft_strnew.s"
+	@echo "... ft_strnstr.o"
+	@echo "... ft_strnstr.i"
+	@echo "... ft_strnstr.s"
+	@echo "... ft_strrchr.o"
+	@echo "... ft_strrchr.i"
+	@echo "... ft_strrchr.s"
+	@echo "... ft_strsplit.o"
+	@echo "... ft_strsplit.i"
+	@echo "... ft_strsplit.s"
+	@echo "... ft_strstr.o"
+	@echo "... ft_strstr.i"
+	@echo "... ft_strstr.s"
 	@echo "... ft_strsub.o"
 	@echo "... ft_strsub.i"
 	@echo "... ft_strsub.s"

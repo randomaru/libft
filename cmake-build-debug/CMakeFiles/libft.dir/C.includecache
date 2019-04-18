@@ -6,17 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/Users/tamarant/Desktop/lv1/Libft/libft/libft.h
+/Users/tamarant/Desktop/lv1/Libft/ft_strsplit.c
+libft.h
+/Users/tamarant/Desktop/lv1/Libft/libft.h
+
+/Users/tamarant/Desktop/lv1/Libft/libft.h
 stdlib.h
 -
-
-/Users/tamarant/Desktop/lv1/Libft/tests/header.h
+unistd.h
+-
 stdio.h
 -
-../libft/libft.h
-/Users/tamarant/Desktop/lv1/Libft/libft/libft.h
-
-/Users/tamarant/Desktop/lv1/Libft/tests/main.c
-header.h
-/Users/tamarant/Desktop/lv1/Libft/tests/header.h
 
