@@ -1,37 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_iterative_power.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/14 22:25:09 by tamarant          #+#    #+#             */
-/*   Updated: 2019/04/23 16:36:06 by tamarant         ###   ########.fr       */
+/*   Created: 2019/04/21 21:21:00 by tamarant          #+#    #+#             */
+/*   Updated: 2019/04/21 21:37:55 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+int		ft_iterative_power(int nb, int power)
 {
-	if (n > -2147483648 && n <= 2147483647)
-	{
-		if (n < 0)
-		{
-			ft_putchar('-');
-			ft_putnbr(n * -1);
-		}
-		else if (n > 9)
-		{
-			ft_putnbr(n / 10);
-			ft_putnbr(n % 10);
-		}
-		else
-			ft_putchar(n + 48);
-	}
-	if (n == -2147483648)
-	{
-		ft_putstr("-2147483648");
-		return ;
-	}
+	int i;
+
+	i = nb;
+	if (power < 0)
+		return (0);
+	if (power == 0)
+		return (1);
+	if (nb == 0 && power > 0)
+		return (0);
+	else
+		while (--power)
+			nb = nb * i;
+	return (nb);
 }

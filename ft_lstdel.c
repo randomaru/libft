@@ -1,37 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_lstdel.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/14 22:25:09 by tamarant          #+#    #+#             */
-/*   Updated: 2019/04/23 16:36:06 by tamarant         ###   ########.fr       */
+/*   Created: 2019/04/20 18:11:17 by tamarant          #+#    #+#             */
+/*   Updated: 2019/04/20 20:07:45 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+void	ft_lstdel(t_list **alst, void (*del)(void*, size_t))
 {
-	if (n > -2147483648 && n <= 2147483647)
+	t_list *lst_next;
+
+	if (alst && del)
 	{
-		if (n < 0)
+		if (*alst)
 		{
-			ft_putchar('-');
-			ft_putnbr(n * -1);
+			while (*alst)
+			{
+				lst_next = (*alst)->next;
+				del((*alst)->content, (*alst)->content_size);
+				free(*alst);
+				*alst = lst_next;
+			}
+			*alst = NULL;
 		}
-		else if (n > 9)
-		{
-			ft_putnbr(n / 10);
-			ft_putnbr(n % 10);
-		}
-		else
-			ft_putchar(n + 48);
-	}
-	if (n == -2147483648)
-	{
-		ft_putstr("-2147483648");
-		return ;
 	}
 }

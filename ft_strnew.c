@@ -18,6 +18,8 @@ char	*ft_strnew(size_t size)
 	size_t	i;
 
 	i = 0;
+	if (size + 1 == 0)
+		return (0);
 	res = (char*)malloc(sizeof(*res) * (size + 1));
 	if (res == NULL)
 		return (NULL);

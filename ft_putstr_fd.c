@@ -17,7 +17,7 @@ void	ft_putstr_fd(char const *s, int fd)
 	int i;
 
 	i = 0;
-	if (s && fd >= 0 && fd <= 3)
+	if (s && fd >= 0)
 	{
 		while (s[i] != '\0')
 		{

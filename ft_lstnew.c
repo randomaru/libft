@@ -1,37 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/14 22:25:09 by tamarant          #+#    #+#             */
-/*   Updated: 2019/04/23 16:36:06 by tamarant         ###   ########.fr       */
+/*   Created: 2019/04/19 21:49:48 by tamarant          #+#    #+#             */
+/*   Updated: 2019/04/20 17:33:02 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+t_list	*ft_lstnew(void const *content, size_t content_size)
 {
-	if (n > -2147483648 && n <= 2147483647)
+	t_list *res;
+
+	if (!(res = (t_list*)malloc(sizeof(t_list))))
+		return (NULL);
+	if (content == NULL)
 	{
-		if (n < 0)
-		{
-			ft_putchar('-');
-			ft_putnbr(n * -1);
-		}
-		else if (n > 9)
-		{
-			ft_putnbr(n / 10);
-			ft_putnbr(n % 10);
-		}
-		else
-			ft_putchar(n + 48);
+		res->content = NULL;
+		res->content_size = 0;
 	}
-	if (n == -2147483648)
+	else
 	{
-		ft_putstr("-2147483648");
-		return ;
+		if (!(res->content = (void*)malloc(content_size)))
+		{
+			free(res);
+			return (NULL);
+		}
+		ft_memcpy(res->content, content, content_size);
+		res->content_size = content_size;
 	}
+	res->next = NULL;
+	return (res);
 }

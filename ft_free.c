@@ -1,37 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_free.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/14 22:25:09 by tamarant          #+#    #+#             */
-/*   Updated: 2019/04/23 16:36:06 by tamarant         ###   ########.fr       */
+/*   Created: 2019/04/20 20:00:50 by tamarant          #+#    #+#             */
+/*   Updated: 2019/04/21 17:46:33 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+void	ft_free(char **res, size_t i)
 {
-	if (n > -2147483648 && n <= 2147483647)
+	while (i > 0)
 	{
-		if (n < 0)
-		{
-			ft_putchar('-');
-			ft_putnbr(n * -1);
-		}
-		else if (n > 9)
-		{
-			ft_putnbr(n / 10);
-			ft_putnbr(n % 10);
-		}
-		else
-			ft_putchar(n + 48);
+		ft_strdel(&res[i]);
+		i--;
 	}
-	if (n == -2147483648)
-	{
-		ft_putstr("-2147483648");
-		return ;
-	}
+	ft_strdel(&res[i]);
+	free(res);
 }

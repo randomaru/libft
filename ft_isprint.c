@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/10 19:52:47 by tamarant          #+#    #+#             */
-/*   Updated: 2019/04/10 20:03:57 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/04/23 16:36:06 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int		ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
-		return (c);
+		return (1);
 	else
 		return (0);
 }

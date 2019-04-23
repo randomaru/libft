@@ -6,7 +6,7 @@
 #    By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/04/09 18:10:20 by tamarant          #+#    #+#              #
-#    Updated: 2019/04/18 14:44:52 by tamarant         ###   ########.fr        #
+#    Updated: 2019/04/23 16:36:06 by tamarant         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,9 @@ SRC = ft_putchar.c ft_putstr.c ft_strcmp.c ft_strcpy.c ft_strdup.c \
 	  ft_memchr.c ft_memcmp.c ft_memalloc.c ft_memdel.c ft_strdel.c \
 	  ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c \
 	  ft_strcat.c ft_strncat.c ft_strchr.c ft_strrchr.c ft_strstr.c \
-	  ft_strnstr.c ft_strlcat.c ft_strsplit.c
+	  ft_strnstr.c ft_strlcat.c ft_strsplit.c ft_swap.c ft_sqrt.c \
+	  ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c \
+	  ft_iterative_factorial.c ft_free.c ft_iterative_power.c
 
 OBJ = ft_putchar.o ft_putstr.o ft_strcmp.o ft_strcpy.o ft_strdup.o \
 	  ft_strlen.o ft_isalpha.o ft_isdigit.o ft_atoi.o ft_strncpy.o \
@@ -34,7 +36,9 @@ OBJ = ft_putchar.o ft_putstr.o ft_strcmp.o ft_strcpy.o ft_strdup.o \
 	  ft_memchr.o ft_memcmp.o ft_memalloc.o ft_memdel.o ft_strdel.o \
 	  ft_putchar_fd.o ft_putstr_fd.o ft_putendl_fd.o ft_putnbr_fd.o \
 	  ft_strcat.o ft_strncat.o ft_strchr.o ft_strrchr.o ft_strstr.o\
-	  ft_strnstr.o ft_strlcat.o ft_strsplit.o
+	  ft_strnstr.o ft_strlcat.o ft_strsplit.o ft_swap.o ft_sqrt.o \
+	  ft_lstnew.o ft_lstdelone.o ft_lstdel.o ft_lstadd.o ft_lstiter.o \
+	  ft_iterative_factorial.o ft_free.o ft_iterative_power.o
 
 
 FLAGS = -Wall -Wextra -Werror

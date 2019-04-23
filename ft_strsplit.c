@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/17 20:15:42 by tamarant          #+#    #+#             */
-/*   Updated: 2019/04/18 21:55:21 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/04/20 20:02:15 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,8 +69,8 @@ char				**ft_strsplit(char const *s, char c)
 		len = ft_words_len(s, c, j);
 		if (!(res[i++] = ft_strsub(s, j, len)))
 		{
-			while (i--)
-				ft_strdel(res);
+			ft_free(res, i);
+			return (0);
 		}
 		j = j + len;
 	}

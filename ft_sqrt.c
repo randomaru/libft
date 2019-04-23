@@ -1,37 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/14 22:25:09 by tamarant          #+#    #+#             */
-/*   Updated: 2019/04/23 16:36:06 by tamarant         ###   ########.fr       */
+/*   Created: 2019/04/19 19:41:43 by tamarant          #+#    #+#             */
+/*   Updated: 2019/04/19 19:41:43 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+int		ft_sqrt(int nb)
 {
-	if (n > -2147483648 && n <= 2147483647)
-	{
-		if (n < 0)
-		{
-			ft_putchar('-');
-			ft_putnbr(n * -1);
-		}
-		else if (n > 9)
-		{
-			ft_putnbr(n / 10);
-			ft_putnbr(n % 10);
-		}
-		else
-			ft_putchar(n + 48);
-	}
-	if (n == -2147483648)
-	{
-		ft_putstr("-2147483648");
-		return ;
-	}
+	int i;
+
+	i = 1;
+	if (nb <= 0 || nb > 2147395600)
+		return (0);
+	while (i * i < nb)
+		i++;
+	if (i * i == nb)
+		return (i);
+	else
+		return (0);
 }
