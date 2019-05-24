@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/15 20:23:45 by tamarant          #+#    #+#             */
-/*   Updated: 2019/04/15 20:32:20 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/05/23 15:13:26 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	char	*s2;
 	int		i;
 
+	if (n == 0 || dst == src)
+		return (dst);
 	s1 = (char*)dst;
 	s2 = (char*)src;
 	i = 0;

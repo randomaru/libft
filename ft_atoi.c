@@ -6,31 +6,21 @@
 /*   By: tamarant <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 17:54:47 by tamarant          #+#    #+#             */
-/*   Updated: 2019/04/23 21:40:14 by tamarant         ###   ########.fr       */
+/*   Updated: 2019/05/23 15:33:21 by tamarant         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/*
-static int		ft_if_neg(const char *str)
+static int		ft_if_neg(const char *str, int i)
 {
 	int neg;
-	int i;
 
 	neg = 0;
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i++] == '-' && (str[i + 1] >= '0' && str[i + 1] <= '9'))
-		{
-			neg = 1;
-			return (neg);
-		}
-	}
+	if (str[i] == '-')
+		neg = 1;
 	return (neg);
 }
-*/
 
 int				ft_atoi(const char *str)
 {
@@ -40,15 +30,11 @@ int				ft_atoi(const char *str)
 
 	i = 0;
 	res = 0;
-	neg = 0;
 	while ((str[i] == 32) || (str[i] >= 9 && str[i] <= 13 && str[i] != '\0'))
 		i++;
-	if (str[i] == '-')
-	{
-		neg = 1;
+	if ((neg = ft_if_neg(str, i)) && str[i + 1] >= '0' && str[i + 1] <= '9')
 		i++;
-	}
-	if (str[i] == '+')
+	if (str[i] == '+' && str[i + 1] >= '0' && str[i + 1] <= '9')
 		i++;
 	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
@@ -63,11 +49,4 @@ int				ft_atoi(const char *str)
 	if (neg)
 		return (-res);
 	return (res);
-}
-
-#include <stdio.h>
-int main(void)
-{
-	printf("%d\n", ft_atoi("12-23"));
-	return (0);
 }
