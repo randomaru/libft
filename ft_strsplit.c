@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/17 20:15:42 by tamarant          #+#    #+#             */
-/*   Updated: 2019/05/23 15:13:27 by tamarant         ###   ########.fr       */
+/*   Updated: 2020/04/07 21:32:00 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,17 @@ static size_t		ft_words_len(char const *s, char c, size_t j)
 	return (len);
 }
 
+static void			free_res(char **res, int i)
+{
+	while (i-- > -1)
+	{
+		free(res[i]);
+		res[i] = NULL;
+	}
+	free(res);
+	res = NULL;
+}
+
 char				**ft_strsplit(char const *s, char c)
 {
 	size_t	i;
@@ -69,8 +80,8 @@ char				**ft_strsplit(char const *s, char c)
 		len = ft_words_len(s, c, j);
 		if (!(res[i++] = ft_strsub(s, j, len)))
 		{
-			ft_free(res, i);
-			return (0);
+			free_res(res, i);
+			return (NULL);
 		}
 		j = j + len;
 	}

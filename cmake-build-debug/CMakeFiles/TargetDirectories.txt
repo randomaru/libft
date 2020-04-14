@@ -1,3 +1,0 @@
-/Users/tamarant/Desktop/lv1/Libft/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/tamarant/Desktop/lv1/Libft/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/tamarant/Desktop/lv1/Libft/cmake-build-debug/CMakeFiles/libft.dir

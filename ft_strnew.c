@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/14 22:42:58 by tamarant          #+#    #+#             */
-/*   Updated: 2019/05/23 15:13:26 by tamarant         ###   ########.fr       */
+/*   Updated: 2020/04/07 21:31:59 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,9 @@ char	*ft_strnew(size_t size)
 	i = 0;
 	if (size + 1 == 0)
 		return (0);
-	res = (char*)malloc(sizeof(*res) * (size + 1));
-	if (res == NULL)
+	if (!(res = (char*)malloc(sizeof(*res) * (size + 1))))
 		return (NULL);
-	while (i < size + 1)
+	while (i < size)
 		res[i++] = '\0';
 	return (res);
 }

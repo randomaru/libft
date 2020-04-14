@@ -6,7 +6,7 @@
 /*   By: tamarant <tamarant@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/07 21:44:24 by tamarant          #+#    #+#             */
-/*   Updated: 2019/05/21 22:13:10 by tamarant         ###   ########.fr       */
+/*   Updated: 2020/04/07 21:31:59 by mac              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,12 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
+# include <fcntl.h>
+# include <limits.h>
+# define BUFF_SIZE 10000
+# define MAX_FD 12000
+# define ULL unsigned long long
+# define LD long double
 
 typedef struct		s_list
 {
@@ -75,7 +81,6 @@ char				*ft_strnstr(const char *ha, const char *ne, size_t len);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
 char				**ft_strsplit(char const *s, char c);
 void				ft_free(char **res, size_t i);
-void				ft_swap(int *a, int *b);
 int					ft_sqrt(int nb);
 int					ft_iterative_factorial(int nb);
 t_list				*ft_lstnew(void const *content, size_t content_size);
@@ -86,5 +91,27 @@ void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 int					ft_iterative_power(int nb, int power);
 char				*ft_strjoin_free(char *s1, char *s2, int opt);
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+int					get_next_line(const int fd, char **line);
+char				**ft_strsplit_ch(char const *s, char c);
+int					ft_countwords(char const *str, char c);
+void				*ft_clear_table(char **tables, int i);
+int					ft_atoi_base(const char *str);
+size_t				ft_wordcount(const char *s, char c);
+size_t				ft_wordsize(const char *s, char c);
+int					number_len(int n);
+int					number_len_ll(long long n);
+int					number_len_ull(unsigned long long n);
+char				*ft_llutoa(unsigned long long int n);
+char				*ft_lltoa(long long int n);
+char				*ulltoa_base(unsigned long long int value, int base);
+char				*itoa_base(int value, int base);
+char				*to_uppercase(char *str);
+void				ft_putnbr_max(long long int nb);
+char				*ft_ulltoa(unsigned long long int n);
+int					ft_isinf(long double num);
+int					ft_isnan(long double num);
+int					ft_is_minus_inf(long double num);
+ULL					ft_pow(ULL n, ULL pow);
+LD					ft_pow_double(LD n, ULL pow);
 
 #endif
